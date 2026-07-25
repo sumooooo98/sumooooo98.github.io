@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oussama El Mejdoubi — iOS Developer</title>
-<meta name="description" content="Oussama El Mejdoubi — Indie iOS developer from Morocco. Swift & SwiftUI. 5+ apps shipped on the App Store.">
+<title>Mohammed Essalhi — iOS Developer</title>
+<meta name="description" content="Mohammed Essalhi — Indie iOS developer from Morocco. Swift & SwiftUI.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -236,15 +236,6 @@
     padding:6px 2px;
   }
   .nav-links a:hover, .nav-links a:focus-visible{color:var(--paper);}
-  .nav-cta{
-    display:inline-flex; align-items:center; gap:8px;
-    background:var(--coral); color:#181018;
-    font-weight:600; font-size:0.88rem;
-    padding:9px 16px; border-radius:999px;
-    text-decoration:none;
-    transition:transform .2s ease, box-shadow .2s ease;
-  }
-  .nav-cta:hover{transform:translateY(-1px); box-shadow:0 8px 20px rgba(255,107,77,0.35);}
   .burger{display:none;}
 
   /* ---------- hero ---------- */
@@ -280,8 +271,7 @@
   }
   .hero-copy > .eyebrow{animation-delay:.05s;}
   .hero-copy > .lede{animation-delay:.75s;}
-  .hero-copy > .hero-actions{animation-delay:.92s;}
-  .hero-copy > .hero-meta{animation-delay:1.08s;}
+  .hero-copy > .hero-meta{animation-delay:.92s;}
   .eyebrow{
     font-family:var(--mono);
     font-size:0.8rem;
@@ -318,29 +308,6 @@
     max-width:46ch;
     margin:0 auto 34px;
   }
-  .hero-actions{
-    display:flex; gap:14px; flex-wrap:wrap;
-    justify-content:center;
-    margin-bottom:38px;
-  }
-  .btn{
-    font-family:var(--body);
-    font-weight:600; font-size:0.95rem;
-    padding:13px 22px;
-    border-radius:12px;
-    text-decoration:none;
-    display:inline-flex; align-items:center; gap:9px;
-    transition:transform .2s ease, background .2s ease, border-color .2s ease;
-  }
-  .btn-primary{
-    background:var(--paper); color:var(--ink);
-  }
-  .btn-primary:hover{transform:translateY(-2px);}
-  .btn-ghost{
-    border:1px solid var(--line);
-    color:var(--paper);
-  }
-  .btn-ghost:hover{border-color:var(--teal); transform:translateY(-2px);}
 
   .hero-meta{
     display:flex; gap:26px; flex-wrap:wrap;
@@ -409,58 +376,6 @@
     margin-top:4px;
   }
 
-  /* ---------- apps ---------- */
-  .apps-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-  }
-  .app-card{
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:26px;
-    text-decoration:none;
-    color:var(--paper);
-    display:flex; flex-direction:column; gap:14px;
-    transition:transform .25s ease, border-color .25s ease, background .25s ease;
-    background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);
-  }
-  .app-card:hover, .app-card:focus-visible{
-    transform:translateY(-4px);
-    border-color: var(--card-accent, var(--teal));
-    background:linear-gradient(180deg, rgba(255,255,255,0.04), transparent);
-  }
-  .app-icon{
-    width:52px; height:52px; border-radius:14px;
-    display:flex; align-items:center; justify-content:center;
-    font-size:1.4rem;
-    background:var(--card-accent, var(--teal));
-    color:#101423;
-    transition:transform .35s cubic-bezier(.34,1.56,.64,1);
-  }
-  .app-card:hover .app-icon{
-    transform:rotate(-8deg) scale(1.08);
-  }
-  .app-card h3{
-    font-family:var(--display);
-    font-size:1.12rem;
-    margin:0;
-  }
-  .app-card .app-desc{
-    color:var(--muted);
-    font-size:0.92rem;
-    flex-grow:1;
-  }
-  .app-link{
-    font-family:var(--mono);
-    font-size:0.78rem;
-    color:var(--card-accent, var(--teal));
-    display:flex; align-items:center; gap:6px;
-  }
-  .app-card:hover .app-link{gap:9px;}
-  .app-link svg{transition:transform .25s ease;}
-  .app-card:hover .app-link svg{transform:translate(2px,-2px);}
-
   /* ---------- skills ---------- */
   .skills{border-top:1px solid var(--line); position:relative; overflow:hidden;}
   .skills > .wrap{position:relative; z-index:1;}
@@ -483,26 +398,6 @@
   }
   .skill-pill b{color:var(--paper); font-weight:500;}
 
-  /* ---------- contact ---------- */
-  .contact{
-    border-top:1px solid var(--line);
-    text-align:center;
-    position:relative;
-    overflow:hidden;
-  }
-  .contact > .wrap{position:relative; z-index:1;}
-  .contact h2{
-    font-family:var(--display);
-    font-size:clamp(2rem,4vw,3rem);
-    margin:0 0 18px;
-    max-width:16ch;
-    margin-left:auto; margin-right:auto;
-  }
-  .contact p{color:var(--muted); margin-bottom:36px;}
-  .contact-actions{
-    display:flex; justify-content:center; gap:16px; flex-wrap:wrap;
-  }
-
   footer{
     border-top:1px solid var(--line);
     padding:28px 0;
@@ -518,7 +413,6 @@
   @media (max-width: 880px){
     .hero{padding-top:56px;}
     .about{grid-template-columns:1fr;}
-    .apps-grid{grid-template-columns:1fr;}
     .nav-links{display:none;}
     section{padding:64px 0;}
   }
@@ -534,13 +428,11 @@
 <header class="site">
   <div class="wrap">
     <nav>
-      <div class="logo"><span class="dot"></span> Oussama El Mejdoubi</div>
+      <div class="logo"><span class="dot"></span> Mohammed Essalhi</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
-      <a class="nav-cta magnetic" href="mailto:OussamaElmejdoubi@protonmail.com">Say hello</a>
     </nav>
   </div>
 </header>
@@ -554,13 +446,9 @@
       <div class="hero-copy">
         <div class="eyebrow">Indie iOS Developer · Morocco</div>
         <h1 id="hero-heading"><span class="word" style="animation-delay:.16s">Building</span> <span class="word" style="animation-delay:.24s">small</span> <span class="word" style="animation-delay:.32s">apps</span> <span class="word" style="animation-delay:.4s">people</span> <span class="word" style="animation-delay:.48s">open</span> <span class="word accent" style="animation-delay:.58s">every</span> <span class="word accent" style="animation-delay:.66s">day.</span></h1>
-        <p class="lede">I'm Oussama, a 20-year-old indie developer from Morocco. I design and ship iOS apps end to end — Swift, SwiftUI, and a lot of attention to the little details on the lock screen.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary magnetic" href="https://apps.apple.com/us/developer/oussama-el-mejdoubi/id1878013560" target="_blank" rel="noopener">View on the App Store</a>
-          <a class="btn btn-ghost magnetic" href="mailto:OussamaElmejdoubi@protonmail.com">OussamaElmejdoubi@protonmail.com</a>
-        </div>
+        <p class="lede">I'm Mohammed, an indie developer from Morocco. I design and ship iOS apps end to end — Swift, SwiftUI, and a lot of attention to the little details on the lock screen.</p>
         <div class="hero-meta">
-          <span><b>5+</b> apps shipped</span>
+          <span><b>iOS</b> / Native</span>
           <span><b>Swift</b> / SwiftUI</span>
           <span><b>Rabat</b>, Morocco</span>
         </div>
@@ -570,8 +458,8 @@
 
   <div class="marquee-band">
     <div class="marquee-track">
-      <span>Swift</span><span>SwiftUI</span><span>iOS Development</span><span>Morocco</span><span>Indie Dev</span><span>Shipped on the App Store</span>
-      <span>Swift</span><span>SwiftUI</span><span>iOS Development</span><span>Morocco</span><span>Indie Dev</span><span>Shipped on the App Store</span>
+      <span>Swift</span><span>SwiftUI</span><span>iOS Development</span><span>Morocco</span><span>Indie Dev</span><span>Mobile Apps</span>
+      <span>Swift</span><span>SwiftUI</span><span>iOS Development</span><span>Morocco</span><span>Indie Dev</span><span>Mobile Apps</span>
     </div>
   </div>
 
@@ -580,14 +468,14 @@
     <div class="wrap" style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px;">
       <div class="reveal">
         <div class="section-tag">01 / About</div>
-        <h2 style="font-family:var(--display); margin-top:14px;">A one-person studio,<br>shipping on the App Store.</h2>
+        <h2 style="font-family:var(--display); margin-top:14px;">A one-person studio,<br>building for iOS.</h2>
       </div>
       <div class="reveal">
-        <p><strong>I'm Oussama El Mejdoubi</strong>, a 20-year-old independent iOS developer from Morocco. I build native apps with <strong>Swift and SwiftUI</strong> — from the first sketch of an idea to a live listing on the App Store.</p>
+        <p><strong>I'm Mohammed Essalhi</strong>, an independent iOS developer from Morocco. I build native apps with <strong>Swift and SwiftUI</strong> — from the first sketch of an idea to a polished, native experience.</p>
         <p style="margin-top:18px;">My work spans lock-screen widgets, wallpapers, and small productivity tools — apps that are simple to open, easy to trust, and made to be used daily rather than once.</p>
         <div class="stat-grid reveal" style="margin-top:32px;">
-          <div class="stat"><div class="num">5+</div><div class="lbl">Apps shipped</div></div>
-          <div class="stat"><div class="num">1</div><div class="lbl">Person team</div></div>
+          <div class="stat"><div class="num">iOS</div><div class="lbl">Native focus</div></div>
+          <div class="stat"><div class="num">1</div><div class="lbl">Person studio</div></div>
           <div class="stat"><div class="num">🇲🇦</div><div class="lbl">Based in Morocco</div></div>
         </div>
       </div>
@@ -614,25 +502,11 @@
       </div>
     </div>
   </section>
-
-  <section class="contact" id="contact">
-    <div class="blob" style="width:420px; height:420px; background:var(--coral); top:-140px; left:50%; margin-left:-210px; animation-delay:-2s;"></div>
-    <div class="wrap reveal">
-      <div class="section-tag">Get in touch</div>
-      <h2>Have an app idea, or want to work together?</h2>
-      <p>I'm always open to freelance projects, collaborations, or just talking Swift.</p>
-      <div class="contact-actions">
-        <a class="btn btn-primary" href="mailto:OussamaElmejdoubi@protonmail.com">Email me</a>
-        <a class="btn btn-ghost" href="https://apps.apple.com/us/developer/oussama-el-mejdoubi/id1878013560" target="_blank" rel="noopener">App Store profile</a>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
   <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:12px;">
-    <span>© <span id="year"></span> Oussama El Mejdoubi. Made in Morocco 🇲🇦</span>
-    <a href="mailto:OussamaElmejdoubi@protonmail.com">OussamaElmejdoubi@protonmail.com</a>
+    <span>© <span id="year"></span> Mohammed Essalhi. Made in Morocco 🇲🇦</span>
   </div>
 </footer>
 
@@ -714,24 +588,6 @@
   } else {
     cursorDot.style.display = 'none';
     cursorRing.style.display = 'none';
-  }
-
-  /* ---------- magnetic buttons ---------- */
-  if (finePointer && !prefersReducedMotion) {
-    document.querySelectorAll('.magnetic').forEach(el => {
-      el.style.transition = 'transform .5s cubic-bezier(.34,1.56,.64,1)';
-      el.addEventListener('mousemove', (e) => {
-        const rect = el.getBoundingClientRect();
-        const relX = e.clientX - rect.left - rect.width / 2;
-        const relY = e.clientY - rect.top - rect.height / 2;
-        el.style.transition = 'transform .12s ease-out';
-        el.style.transform = `translate(${relX * 0.25}px, ${relY * 0.35}px)`;
-      });
-      el.addEventListener('mouseleave', () => {
-        el.style.transition = 'transform .5s cubic-bezier(.34,1.56,.64,1)';
-        el.style.transform = 'translate(0,0)';
-      });
-    });
   }
 
   /* ---------- count-up stat numbers ---------- */
