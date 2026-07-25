@@ -1,1 +1,0 @@
-# sumooooo98.github.io
